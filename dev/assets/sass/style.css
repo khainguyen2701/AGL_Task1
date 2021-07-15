@@ -1,0 +1,1724 @@
+@charset "UTF-8";
+/*------------------------------------------------------------
+	Reset
+------------------------------------------------------------*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+nav, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+body, table,
+input, textarea, select, option,
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+table,
+input, textarea, select, option {
+  line-height: 1.1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+img {
+  vertical-align: top;
+}
+
+a,
+a img {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:hover img {
+  opacity: 0.80;
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+}
+
+img {
+  max-width: 100%;
+}
+
+.sp-only {
+  display: none;
+}
+
+/*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+// Layout .l-
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
+/* Header
+------------------------------------------------------------*/
+.c-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+/* Main menu
+------------------------------------------------------------*/
+.c-gnav ul li {
+  display: inline-block;
+}
+
+.c-gnav ul li + li {
+  margin-left: 20px;
+}
+
+.c-gnav ul a {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.c-footer {
+  padding: 20px 20px;
+  border-top: 3px solid #fafafa;
+  background: #fff;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*------------------------------------------------------------
+sidebar
+------------------------------------------------------------*/
+/* Breadcrumb
+------------------------------------------------------------*/
+/* layout
+------------------------------------------------------------*/
+body {
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: 1.4rem;
+  min-width: 1000px;
+  line-height: 1.5;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    min-width: 320px;
+  }
+}
+
+.c-line {
+  margin-top: 40px;
+  width: 100%;
+  height: 1px;
+  background-color: #a8a8a8;
+}
+
+.c-home {
+  color: #000;
+}
+
+.c-home__icon {
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.c-home1 {
+  margin-top: 122px;
+  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+.c-home1__icon {
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.c-home2 {
+  margin-top: 137px;
+  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+.c-home2__icon {
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.c-category1 {
+  background: url("../img/Image.png") no-repeat center;
+  background-size: cover;
+  height: 360px;
+  position: relative;
+}
+
+.c-category1__inner {
+  position: absolute;
+  bottom: 39px;
+  left: 40px;
+  width: 401px;
+}
+
+.c-category1__btn input {
+  width: 128px;
+  background: #ffdfdf;
+  color: #000000;
+  height: 35px;
+  text-align: center;
+}
+
+.c-category1__btn p {
+  width: 401px;
+  height: 47px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 20px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.c-news {
+  margin-top: 43px;
+  height: 50px;
+  border: 1px solid #ffd800;
+  background-color: #fff9da;
+}
+
+.c-news__text {
+  border-left: 7px solid #ffd800;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-news__text p {
+  padding-left: 22px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.c-category2,
+.c-category3,
+.c-category4,
+.c-category5 {
+  padding: 31px 0;
+}
+
+.c-category2__inner,
+.c-category3__inner,
+.c-category4__inner,
+.c-category5__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.c-category2__img,
+.c-category3__img,
+.c-category4__img,
+.c-category5__img {
+  position: relative;
+  width: 350px;
+}
+
+.c-category2__text,
+.c-category3__text,
+.c-category4__text,
+.c-category5__text {
+  margin-left: 40px;
+  position: relative;
+}
+
+.c-category2__text p,
+.c-category3__text p,
+.c-category4__text p,
+.c-category5__text p {
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-category2__text h3,
+.c-category3__text h3,
+.c-category4__text h3,
+.c-category5__text h3 {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.c-category2__text button,
+.c-category3__text button,
+.c-category4__text button,
+.c-category5__text button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  width: 150px;
+  background-color: #afafaf;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.c-category2__img::before {
+  position: absolute;
+  content: "Category 2";
+  width: 112px;
+  height: 30px;
+  text-align: center;
+  background-color: #a3d39c;
+}
+
+.c-category3__img::before {
+  position: absolute;
+  content: "Category 3";
+  width: 112px;
+  height: 30px;
+  text-align: center;
+  background-color: #fff799;
+}
+
+.c-category4__img::before {
+  position: absolute;
+  content: "Category 4";
+  width: 112px;
+  height: 30px;
+  text-align: center;
+  background-color: #ffdfdf;
+}
+
+.c-category5__img::before {
+  position: absolute;
+  content: "Category 5";
+  width: 112px;
+  height: 30px;
+  text-align: center;
+  background-color: #a3d39c;
+}
+
+.c-viewmore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 61px;
+  padding-bottom: 60px;
+}
+
+.c-viewmore__btn {
+  width: 300px;
+  height: 65px;
+  border: 2px solid #000000;
+  background-color: #ffd800;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-viewmore__btn a {
+  color: #ffffff;
+  font-family: "Yu Gothic";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.c-allfeature {
+  background: #fff2f2;
+  position: relative;
+}
+
+.c-allfeature__feture {
+  margin-top: 43px;
+  height: 50px;
+  border: 1px solid #ffd800;
+  background-color: #fff2f2;
+}
+
+.c-allfeature__feture__text {
+  border-left: 7px solid #f68e56;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-allfeature__feture__text p {
+  padding-left: 22px;
+  width: 63px;
+  height: 18px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: left;
+}
+
+.c-allfeature__progres {
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.c-allfeature__progres1 {
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
+.c-allfeature__progres1 img {
+  width: 450px;
+  padding-bottom: 15px;
+}
+
+.c-allfeature__progres1 button {
+  width: 100px;
+  height: 30px;
+  background-color: #a3d39c;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.c-allfeature__progres1 p {
+  padding-top: 15px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-allfeature__progres0 {
+  padding-bottom: 30px;
+}
+
+.c-allfeature__progres0 img {
+  width: 450px;
+  padding-bottom: 15px;
+}
+
+.c-allfeature__progres0 button {
+  width: 100px;
+  height: 30px;
+  background-color: #a3d39c;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.c-allfeature__progres0 p {
+  padding-top: 15px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-allfeature__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 61px;
+  padding-bottom: 60px;
+}
+
+.c-allfeature__btnBottom {
+  width: 300px;
+  height: 65px;
+  border: 2px solid #000000;
+  background-color: #ffd800;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-allfeature__btnBottom button {
+  width: 300px;
+  height: 65px;
+  border: 2px solid #000000;
+  background-color: #f68e56;
+  border-radius: 5px;
+}
+
+.c-blog {
+  padding-top: 60px;
+}
+
+.c-blog__line {
+  height: 50px;
+  border: 1px solid #ffd800;
+  background-color: #fff2f2;
+}
+
+.c-blog__line--text {
+  border-left: 7px solid #f68e56;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-blog__line--text p {
+  padding-left: 22px;
+  width: 63px;
+  height: 18px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: left;
+}
+
+.c-blog__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding-top: 60px;
+}
+
+.c-blog__inner0 {
+  width: 95%;
+  padding-bottom: 60px;
+}
+
+.c-blog__inner0 img {
+  width: 100%;
+  height: 185px;
+  padding-bottom: 15px;
+}
+
+.c-blog__inner0 button {
+  width: 100px;
+  height: 30px;
+  background-color: #a3d39c;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.c-blog__inner0 p {
+  padding-top: 15px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-blog__inner1 {
+  width: 95%;
+  margin-left: 37px;
+  padding-bottom: 60px;
+}
+
+.c-blog__inner1 img {
+  width: 100%;
+  height: 185px;
+  padding-bottom: 15px;
+}
+
+.c-blog__inner1 button {
+  width: 100px;
+  height: 30px;
+  background-color: #a3d39c;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.c-blog__inner1 p {
+  padding-top: 15px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-blog__btn {
+  padding-top: 61px;
+  padding-bottom: 128px;
+}
+
+.c-blog__btn__bottom {
+  width: 100%;
+  height: 65px;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-blog__btn__bottom button {
+  width: 100%;
+  height: 65px;
+  border: 2px solid #000000;
+  background-color: #6dcff6;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Yu Gothic";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.c-boxlink {
+  padding-top: 39px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.c-boxlink1 {
+  width: 450px;
+  padding-bottom: 15px;
+}
+
+.c-boxlink1 i {
+  font-size: 14px;
+}
+
+.c-boxlink1 h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #6dcff6;
+}
+
+.c-button {
+  padding-bottom: 86px;
+}
+
+.c-button__anchor {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-button__anchor button {
+  height: 45px;
+  background-color: #00aeef;
+  width: 32%;
+  color: #ffffff;
+  font-family: "Yu Gothic";
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.c-title h1 {
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #222222;
+}
+
+.c-dumydumy {
+  padding-top: 60px;
+}
+
+.c-dumydumy__title {
+  color: #222222;
+  padding-bottom: 30px;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-dumydumy__title .u-dumy__title {
+  color: blueviolet;
+  border-bottom: 1px solid blueviolet;
+}
+
+.c-allancholink1 {
+  position: relative;
+}
+
+.c-allancholink1__progres {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.c-allancholink1__progres1 {
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
+.c-allancholink1__progres1 img {
+  width: 450px;
+  padding-bottom: 15px;
+}
+
+.c-allancholink1__progres1 button {
+  width: 100px;
+  height: 30px;
+  background-color: #a3d39c;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.c-allancholink1__progres1 p {
+  padding-top: 15px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-allancholink1__progres0 {
+  padding-bottom: 30px;
+}
+
+.c-allancholink1__progres0 img {
+  width: 450px;
+  padding-bottom: 15px;
+}
+
+.c-allancholink1__progres0 button {
+  width: 100px;
+  height: 30px;
+  background-color: #a3d39c;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.c-allancholink1__progres0 p {
+  padding-top: 15px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-allancholink1__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 61px;
+  padding-bottom: 60px;
+}
+
+.c-allancholink1__btnBottom {
+  width: 300px;
+  height: 65px;
+  border: 2px solid #000000;
+  background-color: #ffd800;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-allancholink1__btnBottom button {
+  width: 300px;
+  height: 65px;
+  border: 2px solid #000000;
+  background-color: #f68e56;
+  border-radius: 5px;
+}
+
+.c-allancholink2 {
+  position: relative;
+  padding-top: 60px;
+}
+
+.c-allancholink2__progres {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+.c-allancholink2__progres1 {
+  padding-bottom: 30px;
+}
+
+.c-allancholink2__progres1 img {
+  padding-bottom: 15px;
+}
+
+.c-allancholink2__progres1 button {
+  width: 100px;
+  height: 30px;
+  background-color: #a3d39c;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.c-allancholink2__progres1 p {
+  padding-top: 15px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-caption {
+  padding-top: 60px;
+}
+
+.c-caption__tablecaption {
+  height: 50px;
+  border: 1px solid #ece6e6;
+  background-color: #ece6e6;
+}
+
+.c-caption__tablecaption__text {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-caption__tablecaption__text p {
+  padding-left: 22px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.c-caption__tablecaption1 {
+  margin-top: 60px;
+  height: 50px;
+  border: 1px solid #ece6e6;
+  background-color: #ece6e6;
+}
+
+.c-caption__tablecaption1__text {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-caption__tablecaption1__text p {
+  padding-left: 22px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.c-caption__title {
+  padding-top: 25px;
+}
+
+.c-caption__title p {
+  padding-bottom: 17px;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-caption__title p .u-caption__title {
+  color: orangered;
+  border-bottom: 1px solid orangered;
+}
+
+.c-caption__table {
+  width: 50%;
+}
+
+.c-caption__table table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.c-caption__table__td1 {
+  height: 36px;
+  background-color: #ece6e6;
+}
+
+.c-caption__table__td2 {
+  height: 36px;
+  background-color: #6dcff6;
+}
+
+.c-caption__table th {
+  height: 36px;
+  background-color: #acd373;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.c-caption__table td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.c-caption__table1 {
+  width: 50%;
+}
+
+.c-caption__table1 table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.c-caption__table1__td1 {
+  height: 36px;
+  background-color: #ece6e6;
+}
+
+.c-caption__table1 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.c-link2 button {
+  width: 100%;
+  height: 100px;
+  border: 2px solid #000000;
+  background-color: #6dcff6;
+  color: #000000;
+  font-family: "Yu Gothic";
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.c-title1 {
+  margin-top: 43px;
+  height: 50px;
+  background-color: #bcd5e1;
+}
+
+.c-title1__text {
+  border-left: 7px solid #11638a;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-title1__text p {
+  padding-left: 22px;
+  color: #11638a;
+  font-family: "Yu Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.c-text {
+  padding-top: 25px;
+}
+
+.c-text p {
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-text p .u-text {
+  color: orange;
+}
+
+.c-comment1 {
+  padding-top: 56px;
+}
+
+.c-comment1 p {
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 15px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.c-comment1 span {
+  color: #11638a;
+  font-family: "Yu Gothic";
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-comment1 span i {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.c-fieldset1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #11638a;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.c-fieldset1 span {
+  color: #11638a;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  padding: 20px;
+}
+
+.c-title2 {
+  margin-top: 93px;
+  height: 50px;
+  background-color: #ffe8e9;
+}
+
+.c-title2__text {
+  border-left: 7px solid #f5989d;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-title2__text p {
+  padding-left: 22px;
+  color: #f5989d;
+  font-family: "Yu Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.c-textmulti {
+  padding-top: 25px;
+}
+
+.c-textmulti p {
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 15px;
+  text-align: left;
+}
+
+.c-seeding,
+.c-palette {
+  padding-top: 35px;
+}
+
+.c-seeding p,
+.c-palette p {
+  color: #f5989d;
+  font-family: "Yu Gothic";
+  font-size: 16px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.c-seeding__text,
+.c-palette__text {
+  padding-top: 10px;
+}
+
+.c-seeding__text p,
+.c-palette__text p {
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 15px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.c-sectionContent {
+  padding-top: 37px;
+  counter-reset: sectionContent;
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-sectionContent__text::before {
+  counter-increment: sectionContent;
+  content: counter(sectionContent) ".";
+  color: #acd373;
+}
+
+.c-sectionContent .c-sectionContent__child {
+  font-family: "Yu Gothic";
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  color: #222222;
+  counter-reset: sectionContentChild;
+  padding-left: 30px;
+}
+
+.c-sectionContent .c-sectionContent__child p::before {
+  color: #acd373;
+  counter-increment: sectionContentChild;
+  content: "3 ." counter(sectionContentChild) " ";
+}
+
+.c-comment2 {
+  padding-top: 36px;
+}
+
+.c-comment2 p {
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 15px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.c-comment2 span {
+  color: #f5989d;
+  font-family: "Yu Gothic";
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-comment2 span i {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.c-fieldset2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #f5989d;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.c-fieldset2 span {
+  color: #11638a;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  padding: 20px;
+}
+
+.c-tablelink2 {
+  padding-top: 60px;
+}
+
+.c-tablelink2__title {
+  padding-bottom: 10px;
+}
+
+.c-tablelink2__title p {
+  color: #222222;
+  font-family: "Yu Gothic";
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-tablelink2__table {
+  width: 100%;
+}
+
+.c-tablelink2__table table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.c-tablelink2__table__td1 {
+  height: 36px;
+  background-color: #ece6e6;
+}
+
+.c-tablelink2__table th {
+  height: 36px;
+  background-color: #acd373;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.c-tablelink2__table td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.c-tablelink2__table1 {
+  width: 50%;
+}
+
+.c-tablelink2__table1 table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.c-tablelink2__table1__td1 {
+  height: 80px;
+  background-color: #ece6e6;
+}
+
+.c-tablelink2__table1 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/**/
+@media only screen and (max-width: 767px) {
+  body {
+    min-width: 320px;
+  }
+  .pc-only {
+    display: none;
+  }
+  .sp-only {
+    display: block;
+  }
+  .c-header {
+    display: inline-block;
+    width: 100%;
+  }
+  .c-header__logo {
+    width: 100%;
+  }
+  .c-header__logo img {
+    width: 100%;
+  }
+  .c-header .c-gnav {
+    text-align: center;
+    padding-top: 30px;
+  }
+  .c-header .c-gnav a {
+    padding: 5px;
+    border: 1px solid #222222;
+    border-radius: 5px;
+    background: #ece6e6;
+  }
+  .c-category1 {
+    width: 100%;
+  }
+  .c-category1__inner {
+    width: 70%;
+  }
+  .c-category1__btn {
+    width: 100%;
+  }
+  .c-category1__btn input {
+    width: 70%;
+  }
+  .c-category1__btn p {
+    width: 100%;
+    font-size: 10px;
+  }
+  .c-category2,
+  .c-category3,
+  .c-category4,
+  .c-category5 {
+    width: 100%;
+  }
+  .c-category2__inner,
+  .c-category3__inner,
+  .c-category4__inner,
+  .c-category5__inner {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .c-category2__img,
+  .c-category3__img,
+  .c-category4__img,
+  .c-category5__img {
+    width: 100%;
+  }
+  .c-category2__img img,
+  .c-category3__img img,
+  .c-category4__img img,
+  .c-category5__img img {
+    width: 100%;
+  }
+  .c-category2__text,
+  .c-category3__text,
+  .c-category4__text,
+  .c-category5__text {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .c-category2__text button,
+  .c-category3__text button,
+  .c-category4__text button,
+  .c-category5__text button {
+    width: 100px;
+    height: 25px;
+  }
+  .c-allfeature__progres {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .c-allfeature__progres1, .c-allfeature__progres0 {
+    padding-left: 0;
+    width: 100%;
+  }
+  .c-allfeature__progres1 img, .c-allfeature__progres0 img {
+    width: 100%;
+  }
+  .c-allfeature__btn {
+    width: 100%;
+  }
+  .c-allfeature__btnBottom {
+    width: 100%;
+  }
+  .c-allfeature__btnBottom button {
+    width: 100%;
+  }
+  .c-blog__inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .c-blog__inner0, .c-blog__inner1 {
+    margin-left: 0;
+    width: 100%;
+    padding-left: 0;
+  }
+  .c-blog__inner0 img, .c-blog__inner1 img {
+    width: 100%;
+  }
+  .c-blog__btn {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .c-home1 {
+    margin-top: 50px;
+  }
+  .c-boxlink {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    width: 100%;
+  }
+  .c-boxlink1 {
+    width: 100%;
+  }
+  .c-button {
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  .c-button__anchor {
+    display: inline-block;
+    width: 100%;
+  }
+  .c-button__anchor button {
+    width: 100%;
+  }
+  .c-allancholink1 {
+    width: 100%;
+  }
+  .c-allancholink1__progres {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    width: 100%;
+  }
+  .c-allancholink1__progres0, .c-allancholink1__progres1 {
+    width: 100%;
+    padding-left: 0;
+  }
+  .c-allancholink2 {
+    padding-top: 40px;
+  }
+  .c-allancholink2__progres {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    width: 100%;
+  }
+  .c-allancholink2__progres1 {
+    width: 100%;
+  }
+  .c-caption {
+    width: 100%;
+  }
+  .c-caption__table, .c-caption__table1 {
+    width: 100%;
+  }
+  .c-caption__table th, .c-caption__table td, .c-caption__table1 th, .c-caption__table1 td {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    min-width: 780px;
+  }
+  .c-header {
+    width: 100%;
+  }
+  .c-category2__text button,
+  .c-category3__text button,
+  .c-category4__text button,
+  .c-category5__text button {
+    width: 100px;
+    height: 25px;
+  }
+  .c-blog__btn {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .c-boxlink {
+    width: 100%;
+  }
+  .c-boxlink1 {
+    width: 95%;
+  }
+  .c-allancholink2__progres {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .c-allancholink2__progres1 {
+    width: 100%;
+  }
+  .c-allancholink2__progres1 img {
+    width: 98%;
+  }
+  .c-home1 {
+    margin-top: 50px;
+  }
+}
+
+/*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+// Component .c-
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
+/*------------------------------------------------------------
+btn
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+.c-btn1 {
+  display: inline-block;
+  padding: 10px 50px;
+  font-size: 1.6rem;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  line-height: 1;
+}
+
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+/*------------------------------------------------------------
+icon
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+/*------------------------------------------------------------
+form
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+/*------------------------------------------------------------
+text
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+/*------------------------------------------------------------
+navi
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+/*------------------------------------------------------------
+img
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+/*------------------------------------------------------------
+list
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+/*------------------------------------------------------------
+table
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+/*------------------------------------------------------------
+line
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+/*------------------------------------------------------------
+video
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+/*------------------------------------------------------------
+video
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+/*------------------------------------------------------------
+other
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+/*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+// Project .p-
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
+/*------------------------------------------------------------
+Css of home page
+------------------------------------------------------------*/
+.p-top {
+  line-height: 2;
+}
+
+/*------------------------------------------------------------
+Css of home page
+------------------------------------------------------------*/
+.p-about {
+  line-height: 2;
+}
+
+/*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+// Utility .u-
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
+/*# sourceMappingURL=style.css.map */

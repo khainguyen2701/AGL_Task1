@@ -1,0 +1,30 @@
+/* Header
+------------------------------------------------------------*/
+.c-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+
+/* Main menu
+------------------------------------------------------------*/
+.c-gnav{
+    
+    ul{
+        li{
+            display: inline-block;
+            +li{
+                margin-left: 20px;
+            }
+        }
+        a{
+            font-size: 1.6rem;
+            text-transform: capitalize;
+        }
+
+    }
+   
+    
+}

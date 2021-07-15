@@ -1,0 +1,264 @@
+@charset 'utf-8';
+
+//≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+// define
+//≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+@import '0_base/vars';
+@import '0_base/reset';
+@import '0_base/mixin';
+
+
+.sp-only {
+	display: none;
+}
+
+/*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+// Layout .l-
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
+@import '1_layout/header';
+@import '1_layout/footer';
+@import '1_layout/sidebar';
+@import '1_layout/breadcrumb';
+@import '1_layout/layout';
+
+/**/
+@include breakpoint(sp) {
+	body{
+		min-width: 320px;
+	}
+	.pc-only {
+		display: none;
+	}
+	.sp-only{
+		display: block;
+	}
+	.c-header{
+		display: inline-block;
+		width: 100%;
+		&__logo{
+			width: 100%;
+			img{
+				width: 100%;
+			}
+		}
+		.c-gnav{
+			text-align: center;
+			padding-top: 30px;
+			a{
+				padding: 5px;
+				border: 1px solid #222222;
+				border-radius: 5px;
+				background: #ece6e6;
+			}
+		}
+	}
+	.c-category1{
+		width: 100%;
+		&__inner{
+			width: 70%;
+		}
+		&__btn{
+			width: 100%;
+			input{
+				width: 70%;
+			}
+			p{
+				width: 100%;
+				font-size: 10px;
+			}
+		}
+	}
+	.c-category2,
+	.c-category3,
+	.c-category4,
+	.c-category5{
+		width: 100%;
+		&__inner{
+			width: 100%;
+			display: grid;
+		grid-template-columns: auto;
+		}
+		&__img{
+			width: 100%;
+			img{
+				width: 100%;
+			}
+		}
+		&__text{
+			margin-left: 0;
+			margin-top: 50px;	
+			button{
+				width: 100px;
+				height: 25px;
+			}
+		}
+	}
+	.c-allfeature__progres{
+		width: 100%;
+		display: grid;
+		grid-template-columns: auto;
+		&1, &0{
+			padding-left: 0;
+			width: 100%;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.c-allfeature__btn{
+		width: 100%;
+		&Bottom{
+			width: 100%;
+			button{
+				width: 100%;
+			}
+		}
+	}
+	.c-blog__inner{
+		display: grid;
+		grid-template-columns: auto;
+		&0, &1{
+			margin-left: 0;
+			width: 100%;
+			padding-left: 0;
+			img{
+				width: 100%;
+			}
+		}
+
+	}
+	.c-blog__btn{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.c-home1{
+		margin-top: 50px;
+	}
+	.c-boxlink{
+		display: grid;
+		grid-template-columns: auto;
+		width: 100%;
+		&1{
+			width: 100%;
+		}
+	}
+	//link1------------------------------------------------
+	.c-button{
+		padding-bottom: 40px;
+		width: 100%;
+		&__anchor{
+			display: inline-block;
+			width: 100%;
+			button{
+				width: 100%;
+			}
+		}
+	}
+	.c-allancholink1{
+		width: 100%;
+		&__progres{
+			display: grid;
+		grid-template-columns: auto;
+			width: 100%;
+			&0, &1{
+				width: 100%;
+				padding-left: 0;
+			}
+		}
+	}
+	.c-allancholink2{
+		padding-top: 40px;
+		&__progres{
+			display: grid;
+		grid-template-columns: auto;
+			width: 100%;
+			&1{
+				width: 100%;
+			}
+		}	
+	}
+	.c-caption{
+		width: 100%;
+		&__table, &__table1
+		{
+			width: 100%;
+			th, td{
+				font-size: 10px;
+			}
+		}
+	}
+	
+}
+@include breakpoint(tablets) {
+	body{
+		min-width: 780px;
+	}
+	.c-header{
+		width: 100%;
+	}
+	.c-category2,
+	.c-category3,
+	.c-category4,
+	.c-category5{
+		&__text{
+			button{
+				width: 100px;
+				height: 25px;
+			}
+		}
+	}
+	.c-blog__btn{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.c-boxlink{
+		width: 100%;
+		&1{
+			width: 95%;
+		}
+	}
+	//link1---------------------------------
+	.c-allancholink2__progres{
+		width: 100%;
+		display: grid;
+		grid-template-columns: auto auto;
+		&1{
+			
+			width: 100%;
+			img{
+				width: 98%;
+			}
+		}
+	}
+	.c-home1{
+		margin-top: 50px;
+	}	
+}
+
+/*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+// Component .c-
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
+@import '2_component/01_btn';
+@import '2_component/02_title';
+@import '2_component/03_icon';
+@import '2_component/04_form';
+@import '2_component/05_text';
+@import '2_component/06_navi';
+@import '2_component/07_img';
+@import '2_component/08_list';
+@import '2_component/09_table';
+@import '2_component/10_line';
+@import '2_component/11_video';
+@import '2_component/12_slide';
+@import '2_component/99_other';
+
+/*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+// Project .p-
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
+@import '3_project/top';
+@import '3_project/about';
+
+/*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+// Utility .u-
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
+@import '0_base/utility';

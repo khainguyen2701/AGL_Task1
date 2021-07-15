@@ -1,0 +1,945 @@
+/* layout
+------------------------------------------------------------*/
+body{
+	font-family: $mainFonts;
+	font-size: 1.4rem;
+	min-width: $baseWidth;
+	line-height: 1.5;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 25px;
+	@include breakpoint(sp) {
+		min-width: 320px;
+	}
+}
+//---------------------------------HOME.HTML----------------------
+.c-line{
+	margin-top: 40px;
+	width: 100%;
+	height: 1px;
+	background-color: #a8a8a8;
+}
+.c-home{
+	color: #000;
+	&__icon{
+		text-transform: uppercase;
+		color: #000000;
+		font-family: "Yu Gothic";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		text-align: left;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+.c-home1{
+	margin-top: 122px;
+	width: 100%;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	color: #000;
+	&__icon{
+		text-transform: uppercase;
+		color: #000000;
+		font-family: "Yu Gothic";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		text-align: left;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+.c-home2{
+	margin-top: 137px;
+	width: 100%;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	color: #000;
+	&__icon{
+		text-transform: uppercase;
+		color: #000000;
+		font-family: "Yu Gothic";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		text-align: left;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+.c-category1{
+	background: url('../img/Image.png') no-repeat center;
+	background-size: cover;
+	height: 360px;
+	position: relative;
+	&__inner{
+		position: absolute;
+		bottom: 39px;
+		left: 40px;
+		width: 401px;
+	}
+	&__btn{
+		input{
+
+			width: 128px;
+			background:#ffdfdf;
+			color: #000000;
+			height: 35px;
+			text-align: center;
+		}
+		p{
+			width: 401px;
+			height: 47px;
+			color: #222222;
+			font-family: "Yu Gothic";
+			font-size: 20px;
+			text-align: left;
+			font-weight: 500;
+		}
+	}
+}
+.c-news{
+	margin-top: 43px;
+	height: 50px;
+	border: 1px solid #ffd800;
+	background-color: #fff9da;
+	&__text{
+		border-left: 7px solid #ffd800;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		p{
+			padding-left: 22px;
+			color: #222222;
+			font-family: "Yu Gothic";
+			font-size: 24px;
+			font-weight: 700;
+			text-align: left;
+		}
+	}
+}
+.c-category2,
+.c-category3,
+.c-category4,
+.c-category5{
+	padding: 31px 0;
+	&__inner{
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	&__img{
+		position: relative;
+		width: 350px;
+	}
+	// &__img::before{
+	// 	position: absolute;
+	// 	content: "Category 2";
+	// 	width: 112px;
+	// 	height: 30px;
+	// 	text-align: center;
+	// 	background-color: #a3d39c;
+	// }
+	&__text{
+		margin-left: 40px;
+		position: relative;
+		p{
+			color: #222222;
+			font-family: "Yu Gothic";
+			font-size: 14px;
+			font-weight: 500;
+			text-align: left;
+		}
+		h3{
+			font-size: 16px;
+			font-weight: 700;
+			text-align: left;
+		}
+		button{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			height: 50px;
+			width: 150px;
+			background-color: #afafaf;
+			text-align: center;
+			border-radius: 5px;
+		}
+	}
+}
+.c-category2__img::before
+{
+	position: absolute;
+		content: "Category 2";
+		width: 112px;
+		height: 30px;
+		text-align: center;
+		background-color: #a3d39c;
+}
+.c-category3__img::before
+{
+	position: absolute;
+		content: "Category 3";
+		width: 112px;
+		height: 30px;
+		text-align: center;
+		background-color: #fff799;
+}
+.c-category4__img::before
+{
+	position: absolute;
+		content: "Category 4";
+		width: 112px;
+		height: 30px;
+		text-align: center;
+		background-color: #ffdfdf;
+}
+.c-category5__img::before
+{
+	position: absolute;
+		content: "Category 5";
+		width: 112px;
+		height: 30px;
+		text-align: center;
+		background-color: #a3d39c;
+}
+.c-viewmore{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 61px;
+	padding-bottom: 60px;
+	&__btn{
+		width: 300px;
+		height: 65px;
+		border: 2px solid #000000;
+		background-color: #ffd800;
+		border-radius: 5px;
+		position: relative;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		a{
+			color: #ffffff;
+			font-family: "Yu Gothic";
+			font-size: 18px;
+			font-weight: 700;
+			
+		}
+	}
+}
+@mixin buttonandp {
+	img{
+		width: 450px;
+		padding-bottom: 15px;
+	}
+	button{
+		width: 100px;
+		height: 30px;
+		background-color: #a3d39c;
+		color: #222222;
+		font-family: "Yu Gothic";
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 20px;
+		text-align: center;
+	}
+	p{
+		padding-top: 15px;
+		color: #222222;
+		font-family: "Yu Gothic";
+		font-size: 14px;
+		font-weight: 500;
+		text-align: left;
+	}
+}
+.c-allfeature{
+	
+	background:#fff2f2;
+	position: relative;
+	&__feture{
+		margin-top: 43px;
+		height: 50px;
+		border: 1px solid #ffd800;
+		background-color: #fff2f2;
+		&__text{
+			border-left: 7px solid #f68e56;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			p{
+				padding-left: 22px;
+				width: 63px;
+				height: 18px;
+				color: #222222;
+				font-family: "Yu Gothic";
+				font-size: 24px;
+				font-weight: 700;
+				font-style: normal;
+				letter-spacing: normal;
+				line-height: 20px;
+				text-align: left;
+			}
+		}
+	}
+	&__progres{
+		margin-top: 30px;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		&1{
+			padding-left: 50px;
+			padding-bottom: 30px;
+			@include buttonandp;
+		}
+		&0{
+			padding-bottom: 30px;
+			@include buttonandp;
+		}
+	}
+	&__btn{
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		padding-top: 61px;
+		padding-bottom: 60px;
+		&Bottom{
+			width: 300px;
+		height: 65px;
+		border: 2px solid #000000;
+		background-color: #ffd800;
+		border-radius: 5px;
+		position: relative;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		button{
+			width: 300px;
+			height: 65px;
+			border: 2px solid #000000;
+			background-color: #f68e56;
+			border-radius: 5px;
+		}
+		}
+
+	}
+
+}
+@mixin innerblock {
+	&__inner{
+		display: grid;
+		grid-template-columns: auto auto;
+		padding-top: 60px;
+		&0{
+			width: 95%;
+			padding-bottom: 60px;
+			img{
+				width: 100%;
+				height: 185px;
+				
+				padding-bottom: 15px;
+			}
+			button{
+				width: 100px;
+				height: 30px;
+				background-color: #a3d39c;
+				color: #222222;
+				font-family: "Yu Gothic";
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 20px;
+				text-align: center;
+			}
+			p{
+				padding-top: 15px;
+				color: #222222;
+				font-family: "Yu Gothic";
+				font-size: 14px;
+				font-weight: 500;
+				text-align: left;
+			}
+		}
+		&1{
+			width: 95%;
+			margin-left: 37px;
+			padding-bottom: 60px;
+			img{
+				width: 100%;
+				height: 185px;
+				padding-bottom: 15px;
+			}
+			button{
+				width: 100px;
+				height: 30px;
+				background-color: #a3d39c;
+				color: #222222;
+				font-family: "Yu Gothic";
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 20px;
+				text-align: center;
+			}
+			p{
+				padding-top: 15px;
+				color: #222222;
+				font-family: "Yu Gothic";
+				font-size: 14px;
+				font-weight: 500;
+				text-align: left;
+			}
+		}
+	}
+}
+.c-blog{
+	padding-top: 60px;
+	&__line{
+		height: 50px;
+		border: 1px solid #ffd800;
+		background-color: #fff2f2;
+		&--text{
+			border-left: 7px solid #f68e56;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			p{
+				padding-left: 22px;
+				width: 63px;
+				height: 18px;
+				color: #222222;
+				font-family: "Yu Gothic";
+				font-size: 24px;
+				font-weight: 700;
+				font-style: normal;
+				letter-spacing: normal;
+				line-height: 20px;
+				text-align: left;
+			}
+		}
+	}
+	@include innerblock;
+	&__btn{
+		padding-top: 61px;
+		padding-bottom: 128px;
+		&__bottom{
+		width: 100%;
+		height: 65px;
+		border-radius: 5px;
+		position: relative;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		button{
+			width: 100%;
+			height: 65px;
+			border: 2px solid #000000;
+			background-color: #6dcff6;
+			border-radius: 5px;
+			color: #ffffff;
+			font-family: "Yu Gothic";
+			font-size: 18px;
+			font-weight: 700;
+		}
+		}
+
+	}
+}
+
+.c-boxlink{
+	padding-top: 39px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	&1{
+		width: 450px;
+		padding-bottom: 15px;
+		i{
+			font-size: 14px;
+		}
+		h3{
+			padding-bottom: 10px;
+			border-bottom: 1px solid #6dcff6;
+		}
+	}
+}
+//-------------------LINK1.HTML-----------------------------------
+.c-button{
+	padding-bottom: 86px;
+	&__anchor{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		button{
+			height: 45px;
+			background-color: #00aeef;
+			width: 32%;
+			color: #ffffff;
+			font-family: "Yu Gothic";
+			font-size: 16px;
+			border-radius: 5px;
+		}
+	}
+}
+.c-title{
+	h1{
+		color: #222222;
+		font-family: "Yu Gothic";
+		font-size: 18px;
+		font-weight: 700;
+		text-align: left;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #222222;
+	}
+}
+.c-dumydumy{
+	padding-top: 60px;
+	&__title{
+		color: #222222;
+		padding-bottom: 30px;
+		font-family: "Yu Gothic";
+		font-size: 14px;
+		font-weight: 500;
+		text-align: left;
+		.u-dumy__title{
+			color: blueviolet;
+			border-bottom: 1px solid blueviolet;
+		}
+	}
+}
+.c-allancholink1{
+	position: relative;
+	&__progres{
+		
+		display: grid;
+		grid-template-columns: auto auto auto;
+		&1{
+			padding-left: 50px;
+			padding-bottom: 30px;
+			@include buttonandp;
+		}
+		&0{
+			padding-bottom: 30px;
+			@include buttonandp;
+		}
+	}
+	&__btn{
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		padding-top: 61px;
+		padding-bottom: 60px;
+		&Bottom{
+			width: 300px;
+		height: 65px;
+		border: 2px solid #000000;
+		background-color: #ffd800;
+		border-radius: 5px;
+		position: relative;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		button{
+			width: 300px;
+			height: 65px;
+			border: 2px solid #000000;
+			background-color: #f68e56;
+			border-radius: 5px;
+		}
+		}
+
+	}
+
+}
+.c-allancholink2{
+	position: relative;
+	padding-top: 60px;
+	&__progres{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		&1{
+			padding-bottom: 30px;
+			img{
+				padding-bottom: 15px;
+			}
+			button{
+				width: 100px;
+				height: 30px;
+				background-color: #a3d39c;
+				color: #222222;
+				font-family: "Yu Gothic";
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 20px;
+				text-align: center;
+			}
+			p{
+				padding-top: 15px;
+				color: #222222;
+				font-family: "Yu Gothic";
+				font-size: 14px;
+				font-weight: 500;
+				text-align: left;
+			}
+		}
+	}
+}
+
+@mixin bodertable {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.c-caption{
+	padding-top: 60px;
+	
+	&__tablecaption{
+		
+		height: 50px;
+		border: 1px solid #ece6e6;
+		background-color: #ece6e6;
+		&__text{
+		height: 100%;
+		display: flex;
+		align-items: center;
+		p{
+			padding-left: 22px;
+			color: #222222;
+			font-family: "Yu Gothic";
+			font-size: 16px;
+			font-weight: 700;
+			text-align: left;
+		}
+		}
+	}
+	&__tablecaption1{
+		margin-top: 60px;
+		height: 50px;
+		border: 1px solid #ece6e6;
+		background-color: #ece6e6;
+		&__text{
+		height: 100%;
+		display: flex;
+		align-items: center;
+		p{
+			padding-left: 22px;
+			color: #222222;
+			font-family: "Yu Gothic";
+			font-size: 16px;
+			font-weight: 700;
+			text-align: left;
+		}
+		}
+	}
+	&__title{
+		padding-top: 25px;
+		p{
+			padding-bottom: 17px;
+			color: #222222;
+			font-family: "Yu Gothic";
+			font-size: 14px;
+			font-weight: 500;
+			text-align: left;
+			.u-caption__title{
+				color: orangered;
+				border-bottom: 1px solid orangered;
+			}
+		}
+	}
+	&__table{
+		width: 50%;
+		table{
+			width: 100%;
+			@include bodertable;
+			text-align: center;
+		}
+		&__td1{
+			height: 36px;
+			background-color: #ece6e6;
+		}
+		&__td2{
+			height: 36px;
+			background-color: #6dcff6;
+		}
+		th{
+			height: 36px;
+			background-color: #acd373;
+			@include bodertable;
+		  }
+		td{
+			
+			@include bodertable;
+		}
+	}
+	&__table1{
+		width: 50%;
+		table{
+			width: 100%;
+			@include bodertable;
+			text-align: center;
+		}
+		&__td1{
+			height: 36px;
+			background-color: #ece6e6;
+		}
+		td{
+			
+			@include bodertable;
+		}
+	}
+	
+
+}
+
+//-------------------LINK2.HTML----------------------------------
+.c-link2{
+	button{
+		width: 100%;
+		height: 100px;
+		border: 2px solid #000000;
+		background-color: #6dcff6;
+		color: #000000;
+		font-family: "Yu Gothic";
+		font-size: 32px;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+.c-title1{
+	margin-top: 43px;
+	height: 50px;
+	background-color: #bcd5e1;
+	&__text{
+		border-left: 7px solid #11638a;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		p{
+			padding-left: 22px;
+			color: #11638a;
+			font-family: "Yu Gothic";
+			font-size: 24px;
+			font-weight: 700;
+			text-align: left;
+		}
+	}
+}
+.c-text{
+	padding-top: 25px;
+	
+	p{
+		color: #222222;
+		font-family: "Yu Gothic";
+		font-size: 15px;
+		font-weight: 500;
+		text-align: left;
+		.u-text{
+			color: orange;
+		}
+	}
+}
+.c-comment1{
+	padding-top: 56px;
+	p{
+		color: #222222;
+		font-family: "Yu Gothic";
+		font-size: 15px;
+		text-align: left;
+		padding-bottom: 10px;
+	}
+	span{
+		color: #11638a;
+		font-family: "Yu Gothic";
+		font-size: 16px;
+		font-weight: 500;
+		text-align: left;
+		i{
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+}
+.c-fieldset1{
+	display: flex;
+	border: 1px solid #11638a;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	span{
+		color: #11638a;
+		font-size: 15px;
+		font-weight: 500;
+		text-align: left;
+		padding: 20px;
+	}
+}
+.c-title2{
+	margin-top: 93px;
+	height: 50px;
+	background-color: #ffe8e9;
+	&__text{
+		border-left: 7px solid #f5989d;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		p{
+			padding-left: 22px;
+			color: #f5989d;
+			font-family: "Yu Gothic";
+			font-size: 24px;
+			font-weight: 700;
+			text-align: left;
+		}
+	}
+	
+}
+
+.c-textmulti{
+	padding-top: 25px;
+	p{
+		color: #222222;
+		font-family: "Yu Gothic";
+		font-size: 15px;
+		text-align: left;
+	}
+}
+.c-seeding,
+.c-palette{
+	padding-top: 35px;
+	p{
+		color: #f5989d;
+		font-family: "Yu Gothic";
+		font-size: 16px;
+		text-align: left;
+		font-weight: 500;
+	}&__text{
+		padding-top: 10px;
+		p{
+			color: #222222;
+			font-family: "Yu Gothic";
+			font-size: 15px;
+			text-align: left;
+			font-weight: 500;
+		}
+	}
+}
+.c-sectionContent{
+	padding-top: 37px;
+	counter-reset:sectionContent;
+	color: #222222;
+	font-family: "Yu Gothic";
+	font-size: 15px;
+	font-weight: 500;	
+	text-align: left;
+	&__text::before{
+		counter-increment: sectionContent;
+		content: (counter(sectionContent))".";
+			color: #acd373;
+	}
+	.c-sectionContent__child{
+		font-family: "Yu Gothic";
+		font-size: 15px;
+		font-weight: 500;	
+		text-align: left;
+		color: #222222;
+		counter-reset:sectionContentChild;
+		padding-left: 30px;
+		p::before{
+				color: #acd373;
+			counter-increment: sectionContentChild;
+			content: "3 ." (counter(sectionContentChild))" ";
+		}
+	}
+	
+
+}
+.c-comment2{
+	padding-top: 36px;
+	p{
+		color: #222222;
+		font-family: "Yu Gothic";
+		font-size: 15px;
+		text-align: left;
+		padding-bottom: 10px;
+	}
+	span{
+		color: #f5989d;
+		font-family: "Yu Gothic";
+		font-size: 16px;
+		font-weight: 500;
+		text-align: left;
+		i{
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+}
+.c-fieldset2{
+	display: flex;
+	border: 1px solid #f5989d;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	span{
+		color: #11638a;
+		font-size: 15px;
+		font-weight: 500;
+		text-align: left;
+		padding: 20px;
+	}
+}
+
+.c-tablelink2{
+	padding-top: 60px;
+	&__title{
+		padding-bottom: 10px;
+		p{
+			color: #222222;
+			font-family: "Yu Gothic";
+			font-size: 15px;
+			font-weight: 500;
+			text-align: left;
+			
+		}
+	}
+	&__table{
+		width: 100%;
+		table{
+			width: 100%;
+			@include bodertable;
+			text-align: center;
+		}
+		&__td1{
+			height: 36px;
+			background-color: #ece6e6;
+		}
+		th{
+			height: 36px;
+			background-color: #acd373;
+			@include bodertable;
+		  }
+		td{
+			
+			@include bodertable;
+		}
+	}
+	&__table1{
+		width: 50%;
+		table{
+			width: 100%;
+			@include bodertable;
+			text-align: center;
+		}
+		&__td1{
+			height: 80px;
+			background-color: #ece6e6;
+		}
+		td{
+			
+			@include bodertable;
+		}
+	}
+	
+
+}
